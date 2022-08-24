@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* navbar ------------------------------------ */
+
+nav {
+  background-color: #815355;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #c7a8a9;
+}
+
+nav ul {
+  padding: 0;
+  margin: 10px;
+}
+
+nav ul:first-child {
+  padding-left: 30px;
+}
+
+nav ul:nth-child(2) {
+  padding-right: 30px;
+}
+
+nav li {
+  color: white;
+  cursor: pointer;
+  display: inline;
+  list-style-type: none;
+}
+nav li.logout-btn:hover {
+  color: #c7a8a9;
+}
+
+nav ul:first-child li:first-child {
+  color: white;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+nav ul:nth-child(2) li {
+  color: white;
+}
+
+nav ul:nth-child(2) li:nth-child(2),
+nav ul:nth-child(2) li:nth-child(3) {
+  margin-left: 20px;
+}
+
+/* form ------------------------------------ */
+
+div.form-container {
+  width: 50%;
+  margin: 50px auto;
+}
+
+div.form-container p.error-msg {
+  color: #eb4141;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+div.form-container p.success-msg,
+div.car-amount-time p.success-msg {
+  color: #50d36e;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+.form-field {
+  background-color: #dbebc0;
+  border: 1px solid #815355;
+  border-radius: 4px;
+}
+
+legend {
+  color: white;
+  background-color: #815355;
+  border-radius: 4px;
+  padding: 5px 20% 5px 10px;
+}
+
+div.form-row {
+  margin: 20px 0;
+}
+
+div.form-row * {
+  margin: 5px 0;
+}
+
+.form-label {
+  display: block;
+  color: #815355;
+}
+
+.form-input {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  border: 1px solid #cbd4c2;
+  border-radius: 4px;
+  color: rgb(114, 114, 114);
+}
+
+select.custom-select {
+  display: block;
+  width: 100%;
+  color: rgb(114, 114, 114);
+  padding: 10px 5px;
+  border: 1px solid #cbd4c2;
+  border-radius: 4px;
+}
+
+.submit-btn,
+.exit-btn {
+  color: white;
+  padding: 8px 25px;
+  background-color: #815355;
+  border: 1px solid #a06a6c;
+  border-radius: 4px;
+  margin: 10px 0 10px 5px;
+}
+
+.submit-btn:hover,
+.exit-btn:hover {
+  cursor: pointer;
+  background-color: #a06a6c;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(129, 83, 85, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+@media (max-width: 900px) {
+  div.form-container {
+    width: 70%;
+  }
+}
+
+/* cars ------------------------------------ */
+.cars-table {
+  width: 70%;
+  margin: 30px auto;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: center;
+}
+
+tbody td.car-num a {
+  color: #a06a6c;
+}
+
+tbody td.car-num a:hover {
+  color: #815355;
+}
+
+tr {
+  height: 40px;
+}
+
+tbody {
+  font-size: 0.8em;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #dbebc0;
+}
+
+.cars-table thead tr:first-child {
+  background-color: #a06a6c;
+  color: white;
+  height: 50px;
+}
+
+p.loading-msg {
+  color: #a06a6c;
+  text-align: center;
+}
+
+/* car-container ------------------------------------ */
+
+div.car-container {
+  width: 50%;
+  margin: 50px auto;
+  border: 2px solid #a06a6c;
+  padding: 10px 30px;
+}
+
+div.car-container h2 {
+  color: #815355;
+  font-weight: 100;
+}
+
+div.car-container p {
+  font-size: 1.1em;
+}
+
+div.car-container p b {
+  color: #a06a6c;
+}
+
+div.car-amount-time {
+  border: 1px solid #c7a8a9;
+  padding: 0 15px;
+}
+
+@media (max-width: 900px) {
+  div.car-container {
+    width: 70%;
+  }
+}

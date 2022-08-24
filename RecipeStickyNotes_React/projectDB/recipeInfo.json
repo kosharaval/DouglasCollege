@@ -1,0 +1,19 @@
+[{
+  "_id": {
+    "$oid": "5fc8ccc60f26881a68673461"
+  },
+  "name": "Chocolate Cake",
+  "ingridents": "Chocolate, flour,eggs,salt,sugar,water"
+},{
+  "_id": {
+    "$oid": "5fc8ccf00f26881a68673462"
+  },
+  "name": "Veggi Pizza",
+  "ingridents": "Base bread, sauce, veggi toppings, cheese"
+},{
+  "_id": {
+    "$oid": "5fc8cd330f26881a68673463"
+  },
+  "name": "Noodles",
+  "ingridents": "Noodles, vegetables, soy sauce"
+}]
